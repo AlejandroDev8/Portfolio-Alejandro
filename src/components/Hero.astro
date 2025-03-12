@@ -1,18 +1,25 @@
+---
+const {email = 'alejandrodeveloper417@gmail.com'} = Astro.props;
+---
+
 <section id="home" class="min-h-screen flex items-center justify-center py-20">
   <div class="flex items-center gap-16 max-w-[1000px] w-full px-4 md:flex-row flex-col">
     <div class="flex-1">
       <h1 class="text-5xl mb-4">¡Hola! Soy <span class="text-text-accent">Alejandro</span></h1>
       <p class="text-xl text-gray-300">Desarrollador <span class="text-text-accent">Full Stack</span></p>
       <div class="flex gap-6 mt-8 md:justify-start justify-center">
-        <a href="#" target="_blank" class="text-2xl text-white hover:text-text-accent transition-colors">
+        <a href="https://github.com/AlejandroDev8" target="_blank" class="text-2xl text-white hover:text-text-accent transition-colors">
           <i class="fab fa-github"></i>
         </a>
         <a href="#" target="_blank" class="text-2xl text-white hover:text-text-accent transition-colors">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a href="#" target="_blank" class="text-2xl text-white hover:text-text-accent transition-colors">
-          <i class="fab fa-twitter"></i>
-        </a>
+        <div class="flex items-center gap-2">
+          <p class="text-white flex items-center gap-2 hover:text-text-accent transition-colors">
+            <i class="fas fa-envelope text-2xl"></i>
+            <span class="text-base">{email}</span>
+          </p>
+        </div>
       </div>
     </div>
     <div class="w-[300px] h-[300px] md:w-[300px] md:h-[300px] rounded-full overflow-hidden border-3 border-text-accent relative md:order-2 order-1 flex-shrink-0">
